@@ -5,6 +5,7 @@ import {
     Text,
     VStack,
     RadioGroup,
+    HStack,
 } from '@chakra-ui/react';
 import { useState } from 'react';
 
@@ -20,24 +21,31 @@ export default function QuizContent() {
             justifyContent="center"
             alignItems="flex-start"
             mx="80"
-            transform="translateY(-1rem)"
+            transform="translateY(-3rem)"
         >
-            <Text fontSize="4xl">
-                {questions[questionCount].title}
-            </Text>
-            <RadioGroup my="3">
+            <Text fontSize="4xl">{questions[questionCount].title}</Text>
+            <RadioGroup my="4">
                 <VStack alignItems="flex-start">
                     {questions[questionCount].options.map((option) => (
                         <Radio size="lg">{option}</Radio>
                     ))}
                 </VStack>
             </RadioGroup>
-            <Button
-                variant="outline"
-                onClick={() => setQuestionCount(questionCount + 1)}
-            >
-                Next
-            </Button>
+            <HStack>
+                <Button
+                    mr="auto"
+                    variant="outline"
+                    onClick={() => setQuestionCount(questionCount - 1)}
+                >
+                    Back
+                </Button>
+                <Button
+                    variant="outline"
+                    onClick={() => setQuestionCount(questionCount + 1)}
+                >
+                    Next
+                </Button>
+            </HStack>
         </Flex>
     );
 }
