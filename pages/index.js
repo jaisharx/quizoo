@@ -14,7 +14,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Box p="3">
+            <Box p="2">
                 <Grid templateColumns="3.8rem 1fr" templateRows="3.8rem 1fr">
                     <Logo/>
                     <Header />
