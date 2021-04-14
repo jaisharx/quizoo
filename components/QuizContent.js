@@ -22,10 +22,10 @@ export default function QuizContent() {
             mx="80"
             transform="translateY(-1rem)"
         >
-            <Text fontSize="4xl" mb="3">
+            <Text fontSize="4xl">
                 {questions[questionCount].title}
             </Text>
-            <RadioGroup>
+            <RadioGroup my="3">
                 <VStack alignItems="flex-start">
                     {questions[questionCount].options.map((option) => (
                         <Radio size="lg">{option}</Radio>
@@ -33,7 +33,6 @@ export default function QuizContent() {
                 </VStack>
             </RadioGroup>
             <Button
-                mt="3"
                 variant="outline"
                 onClick={() => setQuestionCount(questionCount + 1)}
             >
