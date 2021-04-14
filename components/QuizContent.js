@@ -17,8 +17,10 @@ export default function QuizContent() {
         <Flex
             minH="calc(100vh - 16px - 4rem)"
             flexDirection="column"
-            mx="40"
-            pt="40"
+            justifyContent="center"
+            alignItems="flex-start"
+            mx="80"
+            transform="translateY(-1rem)"
         >
             <Text fontSize="4xl" mb="3">
                 {questions[questionCount].title}
@@ -31,7 +33,8 @@ export default function QuizContent() {
                 </VStack>
             </RadioGroup>
             <Button
-                alignSelf="flex-end"
+                mt="3"
+                variant="outline"
                 onClick={() => setQuestionCount(questionCount + 1)}
             >
                 Next
