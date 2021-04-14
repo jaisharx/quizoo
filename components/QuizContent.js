@@ -11,6 +11,7 @@ import { useState } from 'react';
 
 import questions from 'quizzes/html.json';
 
+const max = questions.length;
 export default function QuizContent() {
     const [questionCount, setQuestionCount] = useState(0);
 
