@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "title": "What is the full form of CSS?",
+        "options": [
+            "Color style sheet",
+            "Cascading style sheet",
+            "Creative style sheet",
+            "Concatenated style sheet"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "How many different styling techniques are used in CSS?",
+        "options": ["2", "3", "4", "1"]
+    },
+    {
+        "id": 3,
+        "title": "Which HTML element is used for Important text?",
+        "options": ["<box>", "<important>", "<strong>", "<i>"]
+    },
+    {
+        "id": 4,
+        "title": "Which among the following is a correct way to open a Hyperlink in new tab?",
+        "options": [
+            "<a href=“https://www.geeksforgeeks.org/” new tab></a>",
+            "<a href=“https://www.geeksforgeeks.org/” target=newtab></a>",
+            "<a href=“https://www.geeksforgeeks.org/” target=“_blank”></a>",
+            "<a href=“https://www.geeksforgeeks.org/”></a>"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Using padding clears the area outside:",
+        "options": ["Border", "Content", "Margin", "All of the above"]
+    },
+    {
+        "id": 6,
+        "title": "Which one of the following is the correct way of adding Inline styles.",
+        "options": [
+            "<p style=“font-size:16px;”>Geeksforgeeks</p>",
+            "<p inline style=“font-size:16px”>Geeksforgeeks</p>",
+            "<p inline style=“font-size 16px”>Geeksforgeeks</p>",
+            "<p style=“font-size 16px;”>Geeksforgeeks</p>"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Which HTML tag is used for internal style sheet?",
+        "options": ["Internal", "Style", "CSS", "Internal Style"]
+    },
+    {
+        "id": 8,
+        "title": "Which of the following is the correct CSS syntax?",
+        "options": [
+            "p:color=green, font-size=15px",
+            "{p:color=green, font-size=15px}",
+            "p {color:green, font-size:15px;}",
+            "p {color:green; font-size:15px;}"
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Select the correct among the following for linking an external style sheet.",
+        "options": [
+            "<link rel=“stylesheet” type=“text/css” href=“style.css”>",
+            "<style rel=“stylesheet” type=“text/css” href=“style.css”>",
+            "<link>stylesheet",
+            "<link href=“style.css”>stylesheet"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Which of the following is the correct HTML element to define emphasized text?",
+        "options": ["<italic>", "<em>", "<i>", "<emph>"]
+    },
+    {
+        "id": 11,
+        "title": "How do we add a comment in CSS file?",
+        "options": [
+            "Geeksforgeeks",
+            "/ Geeksforgeeks /",
+            "/*Geeksforgeeks*/",
+            "//*Geeksforgeeks*//"
+        ]
+    },
+    {
+        "id": 12,
+        "title": "If \"padding: 10px 5px 20px 0px\" is given. What does this represent?",
+        "options": [
+            "left:10px , top:5px , right:20px , bottom:0px",
+            "top:10px , right:5px , bottom:20px , left:0px",
+            "right:10px , bottom:5px , left:20px , top:0px",
+            "bottom:10px , left:5px , top:20px , right:0px"
+        ]
+    },
+    {
+        "id": 13,
+        "title": "What is the correct representation to change the color of h2 element?",
+        "options": [
+            "h2 { background-color: #008000 }",
+            "{h2 background-color: #008000}",
+            "h2.all{ background-color: #008000 }",
+            "{h2.all background-color: #008000}"
+        ]
+    },
+    {
+        "id": 14,
+        "title": "Which is the correct syntax to set the unordered-list item marker to a square.",
+        "options": [
+            "<ul style=“list-style-type:square”>",
+            "<ul style=“square”>",
+            "<ul list-style: “square”>",
+            "<ul style=square>"
+        ]
+    },
+    {
+        "id": 15,
+        "title": "Where in HTML document is the conventionally correct place to put reference to an external style sheet?",
+        "options": [
+            "In the HEAD section",
+            "In the BODY section",
+            "Both of the Above",
+            "None of the Above"
+        ]
+    },
+    {
+        "id": 16,
+        "title": "What is the default margin of the body element?",
+        "options": ["10px", "8px", "12px", "6px"]
+    },
+    {
+        "id": 17,
+        "title": "What is the correct CSS syntax to make all paragraph (p) elements bold?",
+        "options": [
+            "{p font-size:bold;}",
+            "p{font-weight :bold;}",
+            "<p style=“font-size=bold;”>",
+            "None of the Above"
+        ]
+    }
+]
