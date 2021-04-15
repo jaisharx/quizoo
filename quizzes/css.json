@@ -122,20 +122,5 @@
             "In the BODY section",
             "Both of the Above"
         ]
-    },
-    {
-        "id": 16,
-        "title": "What is the default margin of the body element?",
-        "options": ["10px", "8px", "12px", "6px"]
-    },
-    {
-        "id": 17,
-        "title": "What is the correct CSS syntax to make all paragraph (p) elements bold?",
-        "options": [
-            "{p font-size:bold;}",
-            "p{font-weight :bold;}",
-            "<p style=“font-size=bold;”>",
-            "None of the Above"
-        ]
     }
 ]
