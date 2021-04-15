@@ -1,4 +1,5 @@
 import {
+    Box,
     Flex,
     Button,
     Radio,
@@ -35,18 +36,26 @@ export default function QuizContent({ quizType }) {
             mx="80"
             transform="translateY(-3rem)"
         >
-            <Text fontSize="4xl">{`${questionCount + 1}. ${
-                quizQuestions[questionCount].title
-            }`}</Text>
-            <RadioGroup my="4" onChange={setRadioValue} value={radioValue}>
-                <VStack alignItems="flex-start">
-                    {quizQuestions[questionCount].options.map((option, idx) => (
-                        <Radio size="lg" value={idx.toString()} key={idx}>
-                            {option}
-                        </Radio>
-                    ))}
-                </VStack>
-            </RadioGroup>
+            <Box h="40vh">
+                <Text fontSize="4xl" mb="4">{`${questionCount + 1}. ${
+                    quizQuestions[questionCount].title
+                }`}</Text>
+                <RadioGroup onChange={setRadioValue} value={radioValue}>
+                    <VStack alignItems="flex-start">
+                        {quizQuestions[questionCount].options.map(
+                            (option, idx) => (
+                                <Radio
+                                    size="lg"
+                                    value={idx.toString()}
+                                    key={idx}
+                                >
+                                    {option}
+                                </Radio>
+                            )
+                        )}
+                    </VStack>
+                </RadioGroup>
+            </Box>
             <HStack>
                 <Button
                     mr="auto"
