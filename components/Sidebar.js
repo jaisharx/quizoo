@@ -10,7 +10,7 @@ export default function Sidebar() {
             justifyContent="center"
         >
             <Link href="https://github.com/jaisharx/quizoo/" isExternal>
-                <Image src="/assets/github.svg" alt="github link icon" w="8" />
+                <Image src="/assets/github.png" alt="github link icon" w="8" />
             </Link>
         </Flex>
     );
