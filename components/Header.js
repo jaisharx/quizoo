@@ -1,4 +1,12 @@
-import { Link, HStack, Text, VStack, Flex } from '@chakra-ui/react';
+import {
+    Link,
+    HStack,
+    Text,
+    VStack,
+    Flex,
+    Image,
+    Tooltip,
+} from '@chakra-ui/react';
 
 export default function Header({ quizType, setQuizType }) {
     return (
@@ -13,7 +21,7 @@ export default function Header({ quizType, setQuizType }) {
                         fontSize="medium"
                         fontWeight={quizType === 'HTML' ? 'medium' : ''}
                         onClick={() => setQuizType('HTML')}
-                        >
+                    >
                         HTML
                     </Text>
                 </VStack>
@@ -27,7 +35,7 @@ export default function Header({ quizType, setQuizType }) {
                         fontSize="medium"
                         fontWeight={quizType === 'CSS' ? 'medium' : ''}
                         onClick={() => setQuizType('CSS')}
-                        >
+                    >
                         CSS
                     </Text>
                 </VStack>
@@ -46,6 +54,12 @@ export default function Header({ quizType, setQuizType }) {
                     </Text>
                 </VStack>
             </HStack>
+
+            <Link href="/score" w="10" ml="auto" mr="4">
+                <Tooltip label="Score" aria-label="See your score">
+                    <Image src="/assets/score.svg" />
+                </Tooltip>
+            </Link>
         </Flex>
     );
 }
