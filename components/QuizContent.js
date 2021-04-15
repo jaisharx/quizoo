@@ -13,6 +13,7 @@ import { useState, useEffect } from 'react';
 import htmlQuestions from 'quizzes/html.json';
 import cssQuestions from 'quizzes/css.json';
 import jsQuestions from 'quizzes/javascript.json';
+import reactQuestions from 'quizzes/react.json';
 
 export default function QuizContent({ quizType }) {
     const [questionCount, setQuestionCount] = useState(0);
@@ -23,6 +24,7 @@ export default function QuizContent({ quizType }) {
         if (quizType === 'HTML') setQuizQuestions(htmlQuestions);
         if (quizType === 'CSS') setQuizQuestions(cssQuestions);
         if (quizType === 'JS') setQuizQuestions(jsQuestions);
+        if (quizType === 'REACT') setQuizQuestions(reactQuestions);
 
         setQuestionCount(0); // resetting
     }, [quizType]);

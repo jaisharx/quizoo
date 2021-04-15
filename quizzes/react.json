@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "What is react used for?",
+        "options": [
+            "Hypertext Machine language.",
+            "Hypertext and links markup language.",
+            "Hypertext Markup Language.",
+            "Hightext machine language."
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Which js framework do you love more?",
+        "options": [
+            "</DOCTYPE HTML>",
+            "</DOCTYPE>",
+            "<!DOCTYPE HTML>",
+            "</DOCTYPE html>"
+        ]
+    }
+]
