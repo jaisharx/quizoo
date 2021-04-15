@@ -14,7 +14,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Quizoo | Instant Quizzes 🤫</title>
+                <title>Quizoo | A json based quiz client built with react & next, 🤫</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
