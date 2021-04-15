@@ -1,4 +1,4 @@
-import { Flex, Image } from '@chakra-ui/react';
+import { Flex, Image, Link } from '@chakra-ui/react';
 
 export default function Logo() {
     return (
@@ -8,7 +8,9 @@ export default function Logo() {
             justifyContent="center"
             alignItems="center"
         >
-            <Image src="/icon.png" alt="logo" />
+            <Link src="/">
+                <Image src="/icon.png" alt="logo" />
+            </Link>
         </Flex>
     );
 }

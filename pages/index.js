@@ -7,7 +7,7 @@ import QuizContent from 'components/QuizContent';
 import Logo from 'components/Logo';
 import { useState } from 'react';
 
-const DEFAULT_QUIZ = 'CSS';
+const DEFAULT_QUIZ = 'HTML';
 export default function Home() {
     const [quizType, setQuizType] = useState(DEFAULT_QUIZ);
 

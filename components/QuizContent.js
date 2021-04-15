@@ -17,7 +17,7 @@ import jsQuestions from 'quizzes/javascript.json';
 export default function QuizContent({ quizType }) {
     const [questionCount, setQuestionCount] = useState(0);
     const [quizQuestions, setQuizQuestions] = useState(htmlQuestions);
-    const [radioValue, setRadioValue] = useState('0');
+    const [radioValue, setRadioValue] = useState('-1');
 
     useEffect(() => {
         if (quizType === 'HTML') setQuizQuestions(htmlQuestions);
@@ -26,6 +26,13 @@ export default function QuizContent({ quizType }) {
 
         setQuestionCount(0); // resetting
     }, [quizType]);
+
+    const buttonHandler = (type) => {
+        if (type === 'back') setQuestionCount(questionCount - 1);
+        if (type === 'next') setQuestionCount(questionCount + 1);
+
+        setRadioValue('-1');
+    };
 
     return (
         <Flex
@@ -61,7 +68,7 @@ export default function QuizContent({ quizType }) {
                     mr="auto"
                     variant="outline"
                     disabled={questionCount === 0 ? true : false}
-                    onClick={() => setQuestionCount(questionCount - 1)}
+                    onClick={() => buttonHandler('back')}
                 >
                     Back
                 </Button>
@@ -72,7 +79,7 @@ export default function QuizContent({ quizType }) {
                             ? true
                             : false
                     }
-                    onClick={() => setQuestionCount(questionCount + 1)}
+                    onClick={() => buttonHandler('next')}
                 >
                     Next
                 </Button>
