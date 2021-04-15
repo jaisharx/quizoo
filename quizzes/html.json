@@ -3,19 +3,40 @@
         "id": 1,
         "title": "What does HTML stand for?",
         "options": [
-            "Hyper Text Markup Language",
-            "Home Tool Markup Language",
-            "Hyperlinks and Text Markup Language"
+            "Hypertext Machine language.",
+            "Hypertext and links markup language.",
+            "Hypertext Markup Language.",
+            "Hightext machine language."
         ]
     },
     {
         "id": 2,
-        "title": "Who is making the Web standards?",
+        "title": "How is document type initialized in HTML5.?",
         "options": [
-            "Google",
-            "Apple",
-            "Mozilla",
-            "The World Wide Web Consortium"
+            "</DOCTYPE HTML>",
+            "</DOCTYPE>",
+            "<!DOCTYPE HTML>",
+            "</DOCTYPE html>"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Which of the following HTML Elements is used for making any text bold ?",
+        "options": [
+            "<p>",
+            "<i>",
+            "<i>",
+            "<b>"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Which of the following HTML element is used for creating an unordered list?",
+        "options": [
+            "<ui>",
+            "<i>",
+            "<em>",
+            "<ul>"
         ]
     }
 ]
