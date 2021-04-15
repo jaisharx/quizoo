@@ -17,7 +17,7 @@ export default function Logo() {
                     whileHover={{
                         rotate: [0, -12, 12],
                     }}
-                    src="/icon.png"
+                    src="/assets/icon.png"
                     alt="logo"
                 />
             </Link>
