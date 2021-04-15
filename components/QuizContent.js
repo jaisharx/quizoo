@@ -25,7 +25,7 @@ export default function QuizContent() {
             mx="80"
             transform="translateY(-3rem)"
         >
-            <Text fontSize="4xl">{`${questionCount}. ${questions[questionCount].title}`}</Text>
+            <Text fontSize="4xl">{`${questionCount + 1}. ${questions[questionCount].title}`}</Text>
             <RadioGroup my="4" onChange={setRadioValue} value={radioValue}>
                 <VStack alignItems="flex-start">
                     {questions[questionCount].options.map((option, idx) => (

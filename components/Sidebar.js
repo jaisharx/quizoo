@@ -1,4 +1,4 @@
-import { Flex, Image, Link } from '@chakra-ui/react';
+import { Flex, Image, Link, Tooltip } from '@chakra-ui/react';
 
 export default function Sidebar() {
     return (
@@ -10,7 +10,13 @@ export default function Sidebar() {
             justifyContent="center"
         >
             <Link href="https://github.com/jaisharx/quizoo/" isExternal>
-                <Image src="/assets/github.png" alt="github link icon" w="8" />
+                <Tooltip label="Github" aria-label="Github Link">
+                    <Image
+                        src="/assets/github.png"
+                        alt="github link icon"
+                        w="8"
+                    />
+                </Tooltip>
             </Link>
         </Flex>
     );
