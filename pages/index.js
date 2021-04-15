@@ -5,8 +5,12 @@ import Header from 'components/Header';
 import Sidebar from 'components/Sidebar';
 import QuizContent from 'components/QuizContent';
 import Logo from 'components/Logo';
+import { useState } from 'react';
 
+const DEFAULT_QUIZ = 'CSS';
 export default function Home() {
+    const [quizType, setQuizType] = useState(DEFAULT_QUIZ);
+
     return (
         <>
             <Head>
@@ -16,10 +20,10 @@ export default function Home() {
 
             <Box p="2">
                 <Grid templateColumns="3.8rem 1fr" templateRows="3.8rem 1fr">
-                    <Logo/>
-                    <Header />
+                    <Logo />
+                    <Header setQuizType={setQuizType} />
                     <Sidebar />
-                    <QuizContent />
+                    <QuizContent quizType={quizType} />
                 </Grid>
             </Box>
         </>

@@ -7,14 +7,24 @@ import {
     RadioGroup,
     HStack,
 } from '@chakra-ui/react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-import questions from 'quizzes/html.json';
+import htmlQuestions from 'quizzes/html.json';
+import cssQuestions from 'quizzes/css.json';
+import jsQuestions from 'quizzes/javascript.json';
 
-const max = questions.length;
-export default function QuizContent() {
+export default function QuizContent({ quizType }) {
     const [questionCount, setQuestionCount] = useState(0);
+    const [quizQuestions, setQuizQuestions] = useState(htmlQuestions);
     const [radioValue, setRadioValue] = useState('0');
+
+    useEffect(() => {
+        if (quizType === 'HTML') setQuizQuestions(htmlQuestions);
+        if (quizType === 'CSS') setQuizQuestions(cssQuestions);
+        if (quizType === 'JS') setQuizQuestions(jsQuestions);
+
+        setQuestionCount(0); // resetting
+    }, [quizType]);
 
     return (
         <Flex
@@ -25,11 +35,15 @@ export default function QuizContent() {
             mx="80"
             transform="translateY(-3rem)"
         >
-            <Text fontSize="4xl">{`${questionCount + 1}. ${questions[questionCount].title}`}</Text>
+            <Text fontSize="4xl">{`${questionCount + 1}. ${
+                quizQuestions[questionCount].title
+            }`}</Text>
             <RadioGroup my="4" onChange={setRadioValue} value={radioValue}>
                 <VStack alignItems="flex-start">
-                    {questions[questionCount].options.map((option, idx) => (
-                        <Radio size="lg" value={idx.toString()} key={idx}>{option}</Radio>
+                    {quizQuestions[questionCount].options.map((option, idx) => (
+                        <Radio size="lg" value={idx.toString()} key={idx}>
+                            {option}
+                        </Radio>
                     ))}
                 </VStack>
             </RadioGroup>
@@ -39,12 +53,16 @@ export default function QuizContent() {
                     variant="outline"
                     disabled={questionCount === 0 ? true : false}
                     onClick={() => setQuestionCount(questionCount - 1)}
-                    >
+                >
                     Back
                 </Button>
                 <Button
                     variant="outline"
-                    disabled={questionCount === (questions.length - 1) ? true : false}
+                    disabled={
+                        questionCount === quizQuestions.length - 1
+                            ? true
+                            : false
+                    }
                     onClick={() => setQuestionCount(questionCount + 1)}
                 >
                     Next
