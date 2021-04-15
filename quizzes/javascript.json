@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "title": "What will be the output of the following code?\n<script>\nlet result = 0;\nfor (let i = 0; i < 5; i++) {\n  result += i;\n}\ndocument.write(result);\n</script>\nRun on IDE",
-        "options": ["5", "0", "10", "None of the above"]
+        "title": "Inside which HTML element do we put the JavaScript?",
+        "options": ["<scripting>", "<js>", "<script>", "<javascript>"]
     },
     {
         "id": 2,
@@ -16,27 +16,37 @@
     },
     {
         "id": 3,
-        "title": "Given a collection of artists and lists of their songs, would you store the artist-song-list pairs in an Object or an Array?",
-        "options": ["Object", "Array", "Function", "None of the above"]
+        "title": "Where is the correct place to insert a JavaScript?",
+        "options": [
+            "The <body> section",
+            "Both the <head> section and the <body> section are correct",
+            "The <head> section",
+            "None of the above"
+        ]
     },
     {
         "id": 4,
-        "title": "What will be the output of the following code?\n<script>\nif (5) { \n document.write(\"I like peanuts\"); \n }\n </script>\nRun on IDE",
+        "title": "What is the correct syntax for referring to an external script called \"xxx.js\"?",
         "options": [
-            "I like peanuts",
-            "undefined",
-            "nothing will be printed",
+            "<script href=\"xxx.js\">",
+            "<script name=\"xxx.js\">",
+            "<script src=\"xxx.js\">",
             "None of the above"
         ]
     },
     {
         "id": 5,
-        "title": "What will be the output of the following code?\n<script>\nlet bar  = 1;\nfoo = {};\nfoo: {\n     bar : 2;\n     baz : ++bar;\n};\ndocument.write(foo.baz + foo.bar + bar);\n</script>\nRun on IDE",
-        "options": ["NaN", "5", "4", "1"]
+        "title": "How do you write \"Hello World\" in an alert box?",
+        "options": [
+            "msg(\"Hello World\");",
+            "msgBox(\"Hello World\");",
+            "alert(\"Hello World\");",
+            "alertBox(\"Hello World\");"
+        ]
     },
     {
         "id": 6,
-        "title": "What will be the output of the following code?\n<script>\n document.write( 10 > 9 > 8 === true );\n</script> \nRun on IDE",
+        "title": "What will be the output of the following code?\n<script>\n document.write( 10 > 9 > 8 === true );\n</> \nRun on IDE",
         "options": ["true", "false", "1", "0"]
     },
     {
