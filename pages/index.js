@@ -2,7 +2,7 @@ import Header from 'components/Header';
 import Sidebar from 'components/Sidebar';
 import QuizContent from 'components/QuizContent';
 import Logo from 'components/Logo';
-import NextHead from 'components/next-head';
+import NextHead from 'components/NextHead';
 
 import { Box, Grid } from '@chakra-ui/react';
 import { useState } from 'react';
