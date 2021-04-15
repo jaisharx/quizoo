@@ -4,9 +4,11 @@ import styled from '@emotion/styled';
 
 const GithubLogo = styled(FiGithub)`
     font-size: 32px;
+    transition: transform .2s ease;
 
     &:hover {
         fill: black;
+        transform: scale(1.2);
     }
 `;
 
