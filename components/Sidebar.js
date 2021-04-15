@@ -4,7 +4,7 @@ export default function Sidebar() {
     return (
         <Flex
             pb="4"
-            border="1px solid black"
+            border="1px solid #999899"
             borderTop="none"
             alignItems="flex-end"
             justifyContent="center"

@@ -4,7 +4,7 @@ export default function Logo() {
     return (
         <Flex
             p="2"
-            border="1px solid black"
+            border="1px solid #999899"
             justifyContent="center"
             alignItems="center"
         >

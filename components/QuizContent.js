@@ -14,6 +14,7 @@ import questions from 'quizzes/html.json';
 const max = questions.length;
 export default function QuizContent() {
     const [questionCount, setQuestionCount] = useState(0);
+    const [radioValue, setRadioValue] = useState('0');
 
     return (
         <Flex
@@ -25,10 +26,10 @@ export default function QuizContent() {
             transform="translateY(-3rem)"
         >
             <Text fontSize="4xl">{questions[questionCount].title}</Text>
-            <RadioGroup my="4">
+            <RadioGroup my="4" onChange={setRadioValue} value={radioValue}>
                 <VStack alignItems="flex-start">
-                    {questions[questionCount].options.map((option) => (
-                        <Radio size="lg">{option}</Radio>
+                    {questions[questionCount].options.map((option, idx) => (
+                        <Radio size="lg" value={idx.toString()} key={idx}>{option}</Radio>
                     ))}
                 </VStack>
             </RadioGroup>
