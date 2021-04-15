@@ -55,7 +55,7 @@ export default function Header({ quizType, setQuizType }) {
                 </VStack>
             </HStack>
 
-            <Link href="/score" w="10" ml="auto" mr="4">
+            <Link w="10" ml="auto" mr="4">
                 <Tooltip label="Score" aria-label="See your score">
                     <Image src="/assets/score.svg" />
                 </Tooltip>
