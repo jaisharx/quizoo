@@ -3,10 +3,16 @@ import {
     HStack,
     Text,
     VStack,
-    Flex,
-    Image,
-    Tooltip,
+    Flex
 } from '@chakra-ui/react';
+
+import { GrScorecard } from 'react-icons/gr';
+import styled from '@emotion/styled';
+
+const ScoreIcon = styled(GrScorecard)`
+    font-size: 26px;
+`;
+
 
 export default function Header({ quizType, setQuizType }) {
     return (
@@ -64,9 +70,7 @@ export default function Header({ quizType, setQuizType }) {
             </HStack>
 
             <Link w="10" ml="auto" mr="4">
-                <Tooltip label="Score" aria-label="See your score">
-                    <Image src="/assets/score.svg" />
-                </Tooltip>
+                <ScoreIcon/>
             </Link>
         </Flex>
     );
