@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "What does HTML stand for?",
+        "title": "What does HTML stands for?",
         "options": [
             "Hypertext Machine language.",
             "Hypertext and links markup language.",
@@ -22,21 +22,121 @@
     {
         "id": 3,
         "title": "Which of the following HTML Elements is used for making any text bold ?",
-        "options": [
-            "<p>",
-            "<i>",
-            "<i>",
-            "<b>"
-        ]
+        "options": ["<p>", "<i>", "<li>", "<b>"]
     },
     {
         "id": 4,
         "title": "Which of the following HTML element is used for creating an unordered list?",
+        "options": ["<ui>", "<i>", "<em>", "<ul>"]
+    },
+    {
+        "id": 5,
+        "title": "Which of the following characters indicate closing of a tag?",
+        "options": [".", "/", "\\", "!"]
+    },
+    {
+        "id": 6,
+        "title": "What is the font-size of the h1 heading tag?",
+        "options": ["3.5 em", "2.17 em", "2 em", "1.5 em"]
+    },
+    {
+        "id": 7,
+        "title": "How many heading tags are there in HTML5?",
+        "options": ["2", "3", "5", "6"]
+    },
+    {
+        "id": 8,
+        "title": "How many attributes are there in HTML5?",
+        "options": ["2", "4", "1", "5"]
+    },
+    {
+        "id": 9,
+        "title": "Which of the following attributes is used to add link to any element?",
+        "options": ["link", "ref", "href", "newref"]
+    },
+    {
+        "id": 10,
+        "title": "Which of the following is the correct way of creating an hyperlink in HTML?",
         "options": [
-            "<ui>",
-            "<i>",
-            "<em>",
-            "<ul>"
+            "<a>www.geeksforgeeks.org <Geeksforgeeks /a>",
+            "<a href=“www.geeksforgeeks.org” Geeksforgeeks /a>",
+            "<a href= “www.geeksforgeeks.org”>Geeksforgeeks</a>",
+            "<a link=“www.geeksforgeeks.org” Geeksforgeeks> </a>"
+        ]
+    },
+    {
+        "id": 11,
+        "title": "What is the purpose of using div tags in HTML?",
+        "options": [
+            "For creating Different styles.",
+            "For creating different sections.",
+            "For adding headings.",
+            "For adding titles."
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Which of the following tags is used to make a portion of text italic in HTML?",
+        "options": ["<italic>", "<style= “i”>", "<i>", "<style=“italic”>"]
+    },
+    {
+        "id": 13,
+        "title": "Which of the following tags is used to add a line-break in HTML?",
+        "options": ["<br>", "<break>", "</break>", "</br>"]
+    },
+    {
+        "id": 14,
+        "title": "Which of the following attributes is used to open an hyperlink in new tab?",
+        "options": ["tab", "href", "target", "ref"]
+    },
+    {
+        "id": 15,
+        "title": "Which of the following is the correct way to add background color in HTML?",
+        "options": [
+            "<body color = “green”>",
+            "<body bg-color = “green”>",
+            "<body style = “background-color=green”>",
+            "<body style = “background-color: green;”>"
+        ]
+    },
+    {
+        "id": 16,
+        "title": "Which among the following is correct HTML code for making a checkbox?",
+        "options": [
+            "<checkbox>",
+            "<input type=\"checkbox\">",
+            "<check>",
+            "<input type=\"check\">"
+        ]
+    },
+    {
+        "id": 17,
+        "title": "Which tag is used for creating a drop-down selection list?",
+        "options": ["<select>", "<option>", "<dropdown>", "<list>"]
+    },
+    {
+        "id": 18,
+        "title": "Which tag is used to add an header in HTML5 table?",
+        "options": ["<theader>", "<h1>", "<th>", "<header>"]
+    },
+    {
+        "id": 19,
+        "title": "Which of the following elements can be used in HTML to create a table?",
+        "options": [
+            "<table> , <tbody> , <trow>",
+            "<table> , <tb> , <trow>",
+            "<table> , <tbody> , <tr>",
+            "All of the above"
+        ]
+    },
+    {
+        "id": 20,
+        "title": "Which among the following is the correct way in HTML to insert an image?",
+        "options": [
+            "<img url=“https://bit.ly/2FicgIx”>Geeksforgeeks</img>",
+            "<img href=“https://bit.ly/2FicgIx” alt= “Geeksforgeeks”></img>",
+            "<img src=“https://bit.ly/2FicgIx” alt=“Geeksforgeeks”>",
+            "<image src=“https://bit.ly/2FicgIx” alt=“Geeksforgeeks”></image>"
         ]
     }
 ]
