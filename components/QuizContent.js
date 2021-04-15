@@ -56,6 +56,8 @@ export default function QuizContent({ quizType }) {
                                     size="lg"
                                     value={idx.toString()}
                                     key={idx}
+                                    colorScheme="gray"
+                                    outlineColor="gray"
                                 >
                                     {option}
                                 </Radio>
