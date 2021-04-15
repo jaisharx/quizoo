@@ -1,6 +1,6 @@
 import { Link, HStack, Text, VStack, Flex } from '@chakra-ui/react';
 
-export default function Header({ setQuizType }) {
+export default function Header({ quizType, setQuizType }) {
     return (
         <Flex border="1px solid #999899" borderLeft="none" alignItems="center">
             <HStack ml="12" spacing="12">
@@ -11,9 +11,9 @@ export default function Header({ setQuizType }) {
                     <Text
                         as={Link}
                         fontSize="medium"
-                        fontWeight="medium"
+                        fontWeight={quizType === 'HTML' ? 'medium' : ''}
                         onClick={() => setQuizType('HTML')}
-                    >
+                        >
                         HTML
                     </Text>
                 </VStack>
@@ -25,9 +25,9 @@ export default function Header({ setQuizType }) {
                     <Text
                         as={Link}
                         fontSize="medium"
-                        fontWeight="medium"
+                        fontWeight={quizType === 'CSS' ? 'medium' : ''}
                         onClick={() => setQuizType('CSS')}
-                    >
+                        >
                         CSS
                     </Text>
                 </VStack>
@@ -39,7 +39,7 @@ export default function Header({ setQuizType }) {
                     <Text
                         as={Link}
                         fontSize="medium"
-                        fontWeight="medium"
+                        fontWeight={quizType === 'JS' ? 'medium' : ''}
                         onClick={() => setQuizType('JS')}
                     >
                         Javascript

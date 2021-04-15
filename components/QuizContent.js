@@ -36,7 +36,7 @@ export default function QuizContent({ quizType }) {
             mx="80"
             transform="translateY(-3rem)"
         >
-            <Box h="40vh">
+            <Box minH="40vh">
                 <Text fontSize="4xl" mb="4">{`${questionCount + 1}. ${
                     quizQuestions[questionCount].title
                 }`}</Text>

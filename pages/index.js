@@ -21,7 +21,7 @@ export default function Home() {
             <Box p="2">
                 <Grid templateColumns="3.8rem 1fr" templateRows="3.8rem 1fr">
                     <Logo />
-                    <Header setQuizType={setQuizType} />
+                    <Header quizType={quizType} setQuizType={setQuizType} />
                     <Sidebar />
                     <QuizContent quizType={quizType} />
                 </Grid>
