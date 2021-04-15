@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "What will be the output of the following code?\n<script>\nlet result = 0;\nfor (let i = 0; i < 5; i++) {\n  result += i;\n}\ndocument.write(result);\n</script>\nRun on IDE",
+        "options": ["5", "0", "10", "None of the above"]
+    },
+    {
+        "id": 2,
+        "title": "True or false: All keys in an object are strings.",
+        "options": [
+            "True",
+            "False",
+            "Depends on the Object type",
+            "None of the above"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Given a collection of artists and lists of their songs, would you store the artist-song-list pairs in an Object or an Array?",
+        "options": ["Object", "Array", "Function", "None of the above"]
+    },
+    {
+        "id": 4,
+        "title": "What will be the output of the following code?\n<script>\nif (5) { \n document.write(\"I like peanuts\"); \n }\n </script>\nRun on IDE",
+        "options": [
+            "I like peanuts",
+            "undefined",
+            "nothing will be printed",
+            "None of the above"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "What will be the output of the following code?\n<script>\nlet bar  = 1;\nfoo = {};\nfoo: {\n     bar : 2;\n     baz : ++bar;\n};\ndocument.write(foo.baz + foo.bar + bar);\n</script>\nRun on IDE",
+        "options": ["NaN", "5", "4", "1"]
+    },
+    {
+        "id": 6,
+        "title": "What will be the output of the following code?\n<script>\n document.write( 10 > 9 > 8 === true );\n</script> \nRun on IDE",
+        "options": ["true", "false", "1", "0"]
+    },
+    {
+        "id": 7,
+        "title": "What will be the output of the following code?\n<script>\n  document.write(String('Hello') == 'Hello');\n</script>\nRun on IDE",
+        "options": ["true", "false", "1", "0"]
+    },
+    {
+        "id": 8,
+        "title": "What will be the output of the following code?\n<script>\ndocument.write(( true + false ) > 2 + true );\n</script>\nRun on IDE",
+        "options": ["true", "false", "1", "0"]
+    },
+    {
+        "id": 9,
+        "title": "What will be the output of the following code?\n<script>\ndocument.write(Number('1') - 1 == 0);\n</script>\nRun on IDE",
+        "options": ["true", "false", "1", "None of the above"]
+    },
+    {
+        "id": 10,
+        "title": "What will be the output of the following code?\n<script>\n document.write(NaN == NaN);\n</script>\nRun on IDE",
+        "options": ["true", "false", "1", "0"]
+    }
+]
