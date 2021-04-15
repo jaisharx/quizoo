@@ -1,4 +1,14 @@
-import { Flex, Image, Link, Tooltip } from '@chakra-ui/react';
+import { Flex, Link, Tooltip } from '@chakra-ui/react';
+import { FiGithub } from 'react-icons/fi';
+import styled from '@emotion/styled';
+
+const GithubLogo = styled(FiGithub)`
+    font-size: 32px;
+
+    &:hover {
+        fill: black;
+    } 
+`;
 
 export default function Sidebar() {
     return (
@@ -9,19 +19,14 @@ export default function Sidebar() {
             borderRightColor="black"
             alignItems="flex-end"
             justifyContent="center"
-
             borderBottom="none"
             borderLeft="none"
         >
-            <Link href="https://github.com/jaisharx/quizoo/" isExternal>
-                <Tooltip label="Github" aria-label="Github Link">
-                    <Image
-                        src="/assets/github.png"
-                        alt="github link icon"
-                        w="8"
-                    />
-                </Tooltip>
-            </Link>
+            <Tooltip label="Github" aria-label="Github Link">
+                <Link href="https://github.com/jaisharx/quizoo/" isExternal>
+                    <GithubLogo />
+                </Link>
+            </Tooltip>
         </Flex>
     );
 }
