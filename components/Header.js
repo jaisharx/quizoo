@@ -1,10 +1,4 @@
-import {
-    Link,
-    HStack,
-    Text,
-    VStack,
-    Flex
-} from '@chakra-ui/react';
+import { Link, HStack, Text, VStack, Flex } from '@chakra-ui/react';
 
 import { GrScorecard } from 'react-icons/gr';
 import styled from '@emotion/styled';
@@ -13,7 +7,6 @@ const ScoreIcon = styled(GrScorecard)`
     font-size: 26px;
 `;
 
-
 export default function Header({ quizType, setQuizType }) {
     return (
         <Flex
@@ -21,7 +14,6 @@ export default function Header({ quizType, setQuizType }) {
             border="1px solid #999899"
             borderLeft="none"
             borderBottomColor="black"
-
             borderTop="none"
             borderRight="none"
         >
@@ -67,10 +59,23 @@ export default function Header({ quizType, setQuizType }) {
                         Javascript
                     </Text>
                 </VStack>
+                <VStack alignItems="flex-start" spacing="0">
+                    <Text fontSize="small" ml="1px">
+                        04
+                    </Text>
+                    <Text
+                        as={Link}
+                        fontSize="medium"
+                        fontWeight={quizType === 'REACT' ? 'medium' : ''}
+                        onClick={() => setQuizType('REACT')}
+                    >
+                        REACT
+                    </Text>
+                </VStack>
             </HStack>
 
             <Link w="10" ml="auto" mr="4">
-                <ScoreIcon/>
+                <ScoreIcon />
             </Link>
         </Flex>
     );

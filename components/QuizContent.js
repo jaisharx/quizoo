@@ -36,12 +36,11 @@ export default function QuizContent({ quizType }) {
 
     return (
         <Flex
+            mx="80"
             minH="calc(100vh - 16px - 4rem)"
             flexDirection="column"
             justifyContent="center"
             alignItems="flex-start"
-            mx="80"
-            transform="translateY(-3rem)"
         >
             <Box minH="40vh">
                 <Text fontSize="4xl" mb="4">{`${questionCount + 1}. ${
