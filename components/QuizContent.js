@@ -36,12 +36,14 @@ export default function QuizContent() {
                 <Button
                     mr="auto"
                     variant="outline"
+                    disabled={questionCount === 0 ? true : false}
                     onClick={() => setQuestionCount(questionCount - 1)}
-                >
+                    >
                     Back
                 </Button>
                 <Button
                     variant="outline"
+                    disabled={questionCount === (questions.length - 1) ? true : false}
                     onClick={() => setQuestionCount(questionCount + 1)}
                 >
                     Next
