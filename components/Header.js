@@ -10,7 +10,15 @@ import {
 
 export default function Header({ quizType, setQuizType }) {
     return (
-        <Flex border="1px solid #999899" borderLeft="none" alignItems="center">
+        <Flex
+            alignItems="center"
+            border="1px solid #999899"
+            borderLeft="none"
+            borderBottomColor="black"
+
+            borderTop="none"
+            borderRight="none"
+        >
             <HStack ml="12" spacing="12">
                 <VStack alignItems="flex-start" spacing="0">
                     <Text fontSize="small" ml="1px">
