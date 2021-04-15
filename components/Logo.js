@@ -7,13 +7,10 @@ export default function Logo() {
     return (
         <Flex
             p="3"
-            border="1px solid #999899"
-            borderRightColor="black"
-            borderBottomColor="black"
+            borderRight="1px solid #999899"
+            borderBottom="1px solid #999899"
             justifyContent="center"
             alignItems="center"
-            borderLeft="none"
-            borderTop="none"
         >
             <Link src="/">
                 <MovingLogo

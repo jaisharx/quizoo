@@ -16,13 +16,9 @@ export default function Sidebar() {
     return (
         <Flex
             pb="2"
-            border="1px solid #999899"
-            borderTop="none"
-            borderRightColor="black"
+            borderRight="1px solid #999899"
             alignItems="flex-end"
             justifyContent="center"
-            borderBottom="none"
-            borderLeft="none"
         >
             <Link href="https://github.com/jaisharx/quizoo/" isExternal>
                 <GithubLogo />
