@@ -36,14 +36,14 @@ export default function QuizContent({ quizType }) {
 
     return (
         <Flex
-            mx="80"
+            mx={[4, 4, 40]}
             minH="calc(100vh - 16px - 4rem)"
             flexDirection="column"
             justifyContent="center"
             alignItems="flex-start"
         >
             <Box minH="40vh">
-                <Text fontSize="4xl" mb="4">{`${questionCount + 1}. ${
+                <Text fontSize={['2xl', '2xl', '3xl', '4xl']} mb="4">{`${questionCount + 1}. ${
                     quizQuestions[questionCount].title
                 }`}</Text>
                 <RadioGroup onChange={setRadioValue} value={radioValue}>
