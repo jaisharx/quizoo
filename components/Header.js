@@ -55,19 +55,6 @@ export default function Header({ quizType, setQuizType }) {
                         Javascript
                     </Text>
                 </VStack>
-                <VStack alignItems="flex-start" spacing="0">
-                    <Text fontSize="small" ml="1px">
-                        04
-                    </Text>
-                    <Text
-                        as={Link}
-                        fontSize="medium"
-                        fontWeight={quizType === 'REACT' ? 'medium' : ''}
-                        onClick={() => setQuizType('REACT')}
-                    >
-                        REACT
-                    </Text>
-                </VStack>
             </HStack>
 
             <Link w="10" ml="auto" mr="4">
